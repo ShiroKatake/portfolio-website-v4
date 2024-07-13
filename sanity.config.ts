@@ -7,7 +7,7 @@
 import { visionTool } from '@sanity/vision'
 import { defineConfig } from 'sanity'
 import { structureTool } from 'sanity/structure'
-import { presentationTool } from 'sanity/presentation'
+import { defineDocuments, presentationTool } from 'sanity/presentation'
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId } from './sanity/env'
@@ -23,7 +23,14 @@ export default defineConfig({
   plugins: [
     structureTool(),
     presentationTool({
-      locate,
+      // resolve: {
+      //   mainDocuments: defineDocuments([
+      //     {
+      //       route: '/posts/:slug',
+      //       filter: `_type == "post" && slug.current == $slug`,
+      //     },
+      //   ]),
+      // },
       previewUrl: {
         draftMode: {
           enable: '/api/draft',

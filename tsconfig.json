@@ -19,6 +19,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@/sanity/*": [
+        "./sanity/*"
       ]
     },
     "target": "ES2017",

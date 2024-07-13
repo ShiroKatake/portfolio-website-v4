@@ -1,6 +1,5 @@
 // ./src/pages/_app.tsx
 
-import "@/styles/globals.css";
 import { VisualEditing } from "@sanity/visual-editing/next-pages-router";
 
 import { AppProps } from "next/app";
@@ -11,7 +10,7 @@ export interface SharedPageProps {
   token: string;
 }
 
-const PreviewProvider = lazy(() => import("../../components/Preview"));
+const PreviewProvider = lazy(() => import("@/components/Preview"));
 
 export default function App({
   Component,

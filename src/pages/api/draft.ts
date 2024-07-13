@@ -4,9 +4,9 @@ import { validatePreviewUrl } from '@sanity/preview-url-secret'
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { createClient } from 'next-sanity'
 
-import { apiVersion, dataset, projectId } from '../../../../sanity/env'
+import { apiVersion, dataset, projectId } from '@/sanity/env'
 
-const token = process.env.SANITY_API_READ_TOKEN
+const token = process.env.SANITY_STUDIO_API_READ_TOKEN
 if (!token) {
   throw new Error(
     'A secret is provided but there is no `SANITY_API_READ_TOKEN` environment variable setup.',
