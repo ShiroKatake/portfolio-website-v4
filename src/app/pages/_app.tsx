@@ -11,7 +11,7 @@ export interface SharedPageProps {
   token: string;
 }
 
-const PreviewProvider = lazy(() => import("@/components/PreviewProvider"));
+const PreviewProvider = lazy(() => import("../../components/Preview"));
 
 export default function App({
   Component,
