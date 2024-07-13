@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/client": "^6.21.0",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/react-loader": "^1.10.4",
+    "@sanity/vision": "^3.50.0",
+    "@sanity/visual-editing": "^2.1.6",
     "next": "14.2.5",
+    "next-sanity": "^9.4.2",
     "react": "^18",
     "react-dom": "^18",
+    "sanity": "^3.50.0",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {

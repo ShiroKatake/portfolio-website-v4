@@ -2,9 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    loader: 'akamai',
-    path: '',
-    domains: ['cdn.sanity.io']
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
+    ],
+  },
+  experimental: {
+    taint: true,
   },
   compiler: {
     styledComponents: true,
