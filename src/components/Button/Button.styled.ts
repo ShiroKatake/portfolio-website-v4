@@ -1,12 +1,11 @@
-"use client";
 import { colors } from "@/styles/colors";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface StyledButtonProps {
-  variant?: "primary" | "secondary";
+  $variant?: "primary" | "secondary";
 }
 
-const StyledButton = styled.button<StyledButtonProps>`
+export const StyledButton = styled.button<StyledButtonProps>`
   display: flex;
   align-items: center;
   gap: 0.625em;
@@ -21,15 +20,20 @@ const StyledButton = styled.button<StyledButtonProps>`
     width: 1.5em;
     height: 1.5em;
   }
+
+  ${({ $variant }) => $variant === "primary"
+    ? primaryButtonStyles
+    : secondaryButtonStyles
+  }
 `;
 
-export const PrimaryButton = styled(StyledButton)`
+const primaryButtonStyles = css`
   background-color: ${colors.primary[20]};
+  border: 2px solid ${colors.primary[20]};
   color: ${colors.white};
-  border: none;
 `;
 
-export const SecondaryButton = styled(StyledButton)`
+const secondaryButtonStyles = css`
   background: none;
   color: ${colors.primary[20]};
   border: 2px solid ${colors.primary[20]};

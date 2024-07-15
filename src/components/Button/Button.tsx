@@ -1,19 +1,19 @@
 import React from "react";
-import { SecondaryButton, PrimaryButton } from "./Button.styled";
+import { StyledButton } from "./Button.styled";
 import { IoIosSend } from "react-icons/io";
 
-interface Props {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: "primary" | "secondary";
 }
 
-export const Button: React.FC<Props> = ({ children }) => {
+export const Button: React.FC<Props> = ({ children, variant, ...props }) => {
   return (
-    <SecondaryButton>
+    <StyledButton $variant={variant} {...props}>
       <span className="icon">
         <IoIosSend />
       </span>
       {children}
-    </SecondaryButton>
+    </StyledButton>
   );
 };
