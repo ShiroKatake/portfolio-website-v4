@@ -12,7 +12,6 @@ export const StyledButton = styled.button<StyledButtonProps>`
   padding: .625em 1em;
   line-height: 0;
   font-size: 1rem;
-  font-family: var(--font-dm-sans);
   border-radius: 0.4375em;
   cursor: pointer;
 
