@@ -12,7 +12,7 @@ interface Props {
   projectType: ProjectType;
 }
 
-export const Toggle: React.FC<Props> = ({ children }) => {
+export const ProjectToggle: React.FC<Props> = ({ children }) => {
   const [projectType, setProjectType] = useState<ProjectType>("web");
   return (
     <Flex gap={spacing.sm}>
