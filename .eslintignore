@@ -1,0 +1,16 @@
+build
+node_modules
+bin
+*.d.ts
+dist
+scripts
+vite.config.ts.timestamp*
+.vscode
+.shopify
+.hydrogen
+e2e-tests
+coverage
+storybook-static
+.git
+.github
+.cache
