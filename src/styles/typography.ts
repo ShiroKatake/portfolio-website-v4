@@ -1,5 +1,5 @@
 export const fontSize = {
-  heading: {
+  title: {
     sm: "1.25rem",
     md: "1.5rem",
     lg: "2.25rem",
@@ -14,7 +14,7 @@ export const fontSize = {
 }
 
 export const lineHeight = {
-  heading: {
+  title: {
     sm: "1.875rem",
     md: "2.25rem",
     lg: "3rem",

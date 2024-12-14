@@ -11,23 +11,23 @@ export const StyledHeading = styled.h2<{ $size: HeadingStyle }>`
 
 export const headingStyle = {
   xl: css`
-    font-size: ${fontSize.heading.xl};
-    line-height: ${lineHeight.heading.xl};
+    font-size: ${fontSize.title.xl};
+    line-height: ${lineHeight.title.xl};
     color: ${colors.primary[10]};
   `,
   lg: css`
-    font-size: ${fontSize.heading.lg};
-    line-height: ${lineHeight.heading.lg};
+    font-size: ${fontSize.title.lg};
+    line-height: ${lineHeight.title.lg};
     color: ${colors.primary[10]};
   `,
   md: css`
-    font-size: ${fontSize.heading.md};
-    line-height: ${lineHeight.heading.md};
+    font-size: ${fontSize.title.md};
+    line-height: ${lineHeight.title.md};
     color: ${colors.white};
   `,
   sm: css`
-    font-size: ${fontSize.heading.sm};
-    line-height: ${lineHeight.heading.sm};
+    font-size: ${fontSize.title.sm};
+    line-height: ${lineHeight.title.sm};
     color: ${colors.white};
   `,
 }

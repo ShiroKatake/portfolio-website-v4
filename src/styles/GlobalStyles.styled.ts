@@ -15,13 +15,19 @@ export const GlobalStyles = createGlobalStyle`
   figure,
   blockquote,
   dl,
-  dd {
+  dd,
+  ul {
     margin: unset;
     padding: unset;
+  }
+
+  ul {
+    list-style-type: none;
   }
 
   body {
     background-color: ${colors.background[30]};
     font-family: var(--font-dm-sans);
+    color: ${colors.white};
   }
 `;

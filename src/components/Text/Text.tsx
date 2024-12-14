@@ -7,8 +7,8 @@ interface TextProps {
   size?: keyof typeof fontSize.body;
 }
 
-export const Text = ({as, children, size}: TextProps) => {
+export const Text = ({as, children, size='md'}: TextProps) => {
   return (
-    <StyledText as={as} $size={size ?? 'md'}>{children}</StyledText>
+    <StyledText as={as} $size={size}>{children}</StyledText>
   )
 }
