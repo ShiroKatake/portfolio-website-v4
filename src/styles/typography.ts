@@ -6,7 +6,8 @@ export const fontSize = {
     xl: "3rem",
   },
   body: {
-    sm: "0.75rem",
+    xs: "0.75rem",
+    sm: "0.875rem",
     md: "1rem",
     lg: "1.25rem",
   },
