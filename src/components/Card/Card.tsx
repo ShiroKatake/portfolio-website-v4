@@ -6,6 +6,7 @@ import {
   StyledLink,
 } from "./Card.styled";
 import { Heading } from "../Heading";
+import { Text } from "../Text";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 interface Props {
@@ -21,19 +22,20 @@ export const Card = ({ title, description, image, video }: Props) => {
   return (
     <StyledCard onClick={() => linkRef.current?.click()}>
       <StyledImage
-        src="/images/project-pod.png"
+        src="https://cdn.sanity.io/images/me5qn7sh/production/521aa3e84522e5da45949997582aac414cbe3b26-422x422.png?w=280"
         alt="Project P.O.D"
-        width={280}
-        height={140}
+        sizes="100vw"
+        width={0}
+        height={0}
       />
       <StyledCardContent>
-        <FaArrowUpRightFromSquare />
+        <FaArrowUpRightFromSquare className="newTabIcon" />
         <StyledLink href="/project-pod" ref={linkRef}>
-          <Heading as="h2" headingStyle="h3">
+          <Heading as="h2" size="sm">
             {title}
           </Heading>
         </StyledLink>
-        <p>{description}</p>
+        <Text size="sm">{description}</Text>
       </StyledCardContent>
     </StyledCard>
   );
