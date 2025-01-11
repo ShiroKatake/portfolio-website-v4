@@ -1,4 +1,3 @@
-import { colors } from "@/styles/colors";
 import { fontSize, lineHeight } from "@/styles/typography";
 import styled, { css } from "styled-components";
 import { HeadingStyle } from "./Heading.type";
@@ -13,21 +12,17 @@ export const headingStyle = {
   xl: css`
     font-size: ${fontSize.title.xl};
     line-height: ${lineHeight.title.xl};
-    color: ${colors.primary[10]};
   `,
   lg: css`
     font-size: ${fontSize.title.lg};
     line-height: ${lineHeight.title.lg};
-    color: ${colors.primary[10]};
   `,
   md: css`
     font-size: ${fontSize.title.md};
     line-height: ${lineHeight.title.md};
-    color: ${colors.white};
   `,
   sm: css`
     font-size: ${fontSize.title.sm};
     line-height: ${lineHeight.title.sm};
-    color: ${colors.white};
   `,
-}
+};
