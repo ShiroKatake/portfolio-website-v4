@@ -4,6 +4,7 @@ import { ProjectToggle } from "@/components/ProjectToggle";
 import { Heading } from "@/components/Heading";
 import { Card } from "@/components/Card/Card";
 import { Experience } from "@/components/Experience/Experience";
+import { PageBreak } from "@/components/PageBreak/PageBreak";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         role="Software Engineer"
         techs="React, TypeScript, Node.js, Express, MongoDB"
       />
+      <PageBreak />
       <Card
         title="Project P.O.D"
         description="An RTS featuring resources and building management, and wave based combat"
