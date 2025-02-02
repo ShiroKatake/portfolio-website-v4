@@ -13,18 +13,15 @@ export const StyledNavBar = styled.nav`
     text-decoration: none;
   }
 
-  ul,
-  #logo-balancer {
-    @media screen and (max-width: 800px) {
-      display: none;
-    }
-  }
-
   ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
 
     ${StyledHeading} {
       font-weight: normal;
@@ -33,5 +30,8 @@ export const StyledNavBar = styled.nav`
 
   #logo-balancer {
     visibility: hidden;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
   }
 `;
