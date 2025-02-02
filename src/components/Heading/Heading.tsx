@@ -2,19 +2,21 @@ import React from "react";
 import { StyledHeading } from "./Heading.styled";
 import { HeadingStyle } from "./Heading.type";
 
-type HeadingProps = {
-  as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  children: React.ReactNode;
-  size: HeadingStyle;
-};
+type HeadingProps<T extends React.ElementType = "div"> =
+  React.ComponentProps<T> & {
+    as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "div";
+    children: React.ReactNode;
+    size: HeadingStyle;
+  };
 
-export const Heading: React.FC<HeadingProps> = ({
+export const Heading = <T extends React.ElementType = "div">({
   as,
   size,
   children,
-}) => {
+  ...otherProps
+}: HeadingProps<T>) => {
   return (
-    <StyledHeading as={as} $size={size}>
+    <StyledHeading {...otherProps} as={as} $size={size}>
       {children}
     </StyledHeading>
   );
