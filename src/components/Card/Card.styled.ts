@@ -1,6 +1,7 @@
-import { colors } from "@/styles/colors";
 import styled from "styled-components";
 import Image from "next/image";
+import { colors } from "@/styles/colors";
+import { StyledLink } from "../Link/Link.styled";
 
 export const StyledCard = styled.article`
   display: flex;
@@ -21,13 +22,12 @@ export const StyledImage = styled(Image)`
 `;
 
 export const StyledCardContent = styled.div`
-  position: relative;
   background-color: ${colors.primary[40]};
   color: ${colors.white};
   padding: 1rem;
 
-  .newTabIcon {
-    position: absolute;
-    right: 1rem;
+  ${StyledLink} {
+    display: flex;
+    justify-content: space-between;
   }
 `;

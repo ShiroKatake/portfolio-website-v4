@@ -22,7 +22,7 @@ export const Card = ({ title, description, image, video }: Props) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <StyledImage
-        src="https://cdn.sanity.io/images/me5qn7sh/production/521aa3e84522e5da45949997582aac414cbe3b26-422x422.png?w=280"
+        src=""
         alt="Project P.O.D"
         sizes="100vw"
         width={0}
