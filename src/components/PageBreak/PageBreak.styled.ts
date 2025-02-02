@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Line from "./Line.svg";
-import Swirl from "./Vector 1.svg";
+import Swirl from "./Swirl.svg";
 
 export const StyledPageBreak = styled.div`
   display: flex;
