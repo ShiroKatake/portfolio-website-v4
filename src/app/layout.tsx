@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Eczar, DM_Sans } from "next/font/google";
 import StyledComponentsRegistry from "@/lib/registry";
 import { GlobalStyles } from "@/styles/GlobalStyles.styled";
+import { NavBar } from "@/components/NavBar/NavBar";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${eczar.variable}`}>
       <body>
+        <NavBar />
         <GlobalStyles />
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
